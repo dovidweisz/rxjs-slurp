@@ -2,6 +2,7 @@
   "name": "rxjs-slurp",
   "version": "1.0.0",
   "description": "An rxjs replacement for Gulp",
+  "repository": "https://github.com/dovidweisz/rxjs-slurp.git",
   "main": "index.js",
   "scripts": {
     "tsc": "tsc"
