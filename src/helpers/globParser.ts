@@ -11,15 +11,15 @@ import 'rxjs/add/operator/mergeMap';
 const glob$$ = Observable.bindNodeCallback(glob);
 const fs_readFile$$ = Observable.bindNodeCallback(readFile);
 
-export function globParser$$(globArg: string | string[]): Observable<Vinyl> {
+export function globParser$(globArg: string | string[]): Observable<Vinyl> {
     if(typeof globArg === 'string'){
         globArg = [globArg as string];
     }
     return Observable.from(globArg)
-        .mergeMap(globString => _stringGlobParser$$(globString));
+        .mergeMap(globString => _stringGlobParser$(globString));
 }
 
-function _stringGlobParser$$(globString: string): Observable<Vinyl>{
+function _stringGlobParser$(globString: string): Observable<Vinyl>{
     return glob$$(globString)
         .mergeMap((files: string[]) => Observable.from(files))
         .mergeMap(filePath =>

@@ -1,4 +1,4 @@
-import { globParser$$ } from 'helpers/globParser';
+import { globParser$ } from 'helpers/globParser';
 
 
 
