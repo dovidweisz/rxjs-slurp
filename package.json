@@ -4,7 +4,7 @@
   "description": "An rxjs replacement for Gulp",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tsc": "tsc"
   },
   "keywords": [
     "rxjs",
@@ -16,5 +16,15 @@
   "license": "ISC",
   "peerDependencies": {
     "rxjs": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/glob": "^5.0.31",
+    "@types/vinyl": "^2.0.0",
+    "rxjs": "^5.4.3",
+    "typescript": "^2.4.2"
+  },
+  "dependencies": {
+    "glob": "^7.1.2",
+    "vinyl": "^2.1.0"
   }
 }
