@@ -1,7 +1,7 @@
 {
   "name": "rxjs-slurp",
   "version": "1.0.0",
-  "description": "An rxjs replacement for Gulp",
+  "description": "An rxjs replacement for Gulp streams",
   "repository": "https://github.com/dovidweisz/rxjs-slurp.git",
   "main": "index.js",
   "scripts": {
